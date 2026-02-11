@@ -13,7 +13,7 @@ Two small **Tkinter GUI** tools for estimating gacha outcomes in **Genshin Impac
 ## What’s included
 
 ### 1) EV calculator — expected pulls & primogems
-File: `genshin expected pull calculator.py`
+File: `genshin_expected_pull_calculator.py`
 
 - Computes the expected number of **5★ hits** needed for:
   - Character banner target copies
@@ -28,7 +28,7 @@ File: `genshin expected pull calculator.py`
 ---
 
 ### 2) Probability calculator — chance to finish within a pull budget
-File: `genshin probability calculator.py`
+File: `genshin_probability_calculator.py`
 
 - Takes a **pull budget** and estimates your chance to reach the target using Monte Carlo simulation.
 - Uses your provided **CDFs** to sample “pulls until next 5★”.
@@ -42,7 +42,7 @@ File: `genshin probability calculator.py`
 
 ---
 
-## Game rules modeled (as implemented here)
+## Game rules modeled 
 
 ### Character banner (5★ featured)
 - Base chance the 5★ is the featured banner character: **55%**
@@ -84,19 +84,13 @@ No external libraries required.
 
 ## How to run
 
-Because the filenames include spaces, use quotes:
-
-```bash
-python "genshin expected pull calculator.py"
-python "genshin probability calculator.py"
+Run the program
+```
+python genshin_expected_pull_calculator.py
+python genshin_probability_calculator.py
 ```
 
-If you prefer, you can rename them to something like:
-
-- `genshin_ev_calculator.py`
-- `genshin_probability_calculator.py`
-
-and run without quotes.
+A small window will open with all inputs available at once.
 
 ---
 
@@ -112,18 +106,22 @@ and run without quotes.
 
 ---
 
-## Contributing / Tweaks
+# Notes
 
-Common tweaks you might want:
-- Add a dropdown for spending strategy (Weapons-first vs Characters-first)
-- Add separate budgets for character vs weapon banners
-- Add a CLI mode (no GUI) for quick calculations
+- This tool does not validate in-game feasibility
 
-PRs and suggestions are welcome.
+- It focuses purely on turn math and advance mechanics
+
+- Intended as a planning and theorycrafting aid
+
 
 ---
 
-## License
 
-Choose any license you want (MIT is common) and add a `LICENSE` file.
-If you don’t add one, GitHub will treat this repo as “all rights reserved” by default.
+# License
+
+- This project is provided for personal and educational use.
+  
+- Not affiliated with or endorsed by HoYoverse.
+
+
