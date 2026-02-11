@@ -114,6 +114,10 @@ A small window will open with all inputs available at once.
 
 - Intended as a planning and theorycrafting aid
 
+
+---
+
+
 # License
 
 - This project is provided for personal and educational use.
